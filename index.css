@@ -1,0 +1,83 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("6578590 update.jpg");
+    background-size: cover;
+}
+
+.kotak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 93vh;
+    animation: blinkBackground 3s infinite;
+}
+
+.label {
+    background-color: none;
+    border: 2px black solid;
+    padding: 20px;
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 1.5s;
+    color: white;
+
+}
+.label:hover{
+    background-color:skyblue; 
+    color: black;   
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: 0.5s;
+
+}
+button:hover{
+    background-color:aqua;
+    box-shadow: 2px 3px black;
+    color: black;
+
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+button:active {
+    transform: translate(2px, 3px);
+    box-shadow: none;
+}
+
+@keyframes blinkBackground {
+    0%, 100% {
+        transform: none;
+    }
+    50% {
+        transform: scale(0.95);
+    }
+}
