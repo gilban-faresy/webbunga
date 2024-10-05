@@ -25,12 +25,13 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: 1.5s;
     color: white;
-
 }
-.label:hover{
-    background-color:skyblue; 
+
+.label:hover {
+    background-color: skyblue; 
     color: black;   
 }
+
 button {
     background-color: black;
     color: white;
@@ -42,13 +43,12 @@ button {
     cursor: pointer;
     box-shadow: none;
     transition: 0.5s;
-
 }
-button:hover{
-    background-color:aqua;
+
+button:hover {
+    background-color: aqua;
     box-shadow: 2px 3px black;
     color: black;
-
 }
 
 h2 {
@@ -67,7 +67,6 @@ input, select {
     border: 1px solid #ccc;
 }
 
-
 button:active {
     transform: translate(2px, 3px);
     box-shadow: none;
@@ -79,5 +78,51 @@ button:active {
     }
     50% {
         transform: scale(0.95);
+    }
+}
+
+/* Media Query untuk Tablet */
+@media (max-width: 768px) {
+    .label {
+        width: 90%; /* Mengurangi lebar untuk tablet */
+        padding: 15px; /* Mengurangi padding */
+    }
+
+    button {
+        width: 100px; /* Sedikit lebih kecil untuk layar tablet */
+        height: 35px;
+    }
+
+    input, select {
+        width: calc(100% - 16px); /* Sedikit lebih kecil untuk input */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Mengurangi ukuran font pada tablet */
+    }
+}
+
+/* Media Query untuk HP */
+@media (max-width: 480px) {
+    .label {
+        width: 100%; /* Lebar penuh pada HP */
+        padding: 10px;
+        border-radius: 10px; /* Mengurangi radius untuk tampilan lebih kompak */
+    }
+
+    button {
+        width: 100px; /* Lebih kecil untuk HP */
+        height: 35px;
+        font-size: 0.9rem; /* Mengurangi ukuran font */
+    }
+
+    input, select {
+        width: calc(100% - 10px); /* Lebih kecil untuk input */
+        padding: 8px; /* Mengurangi padding */
+        font-size: 0.9rem; /* Mengurangi ukuran font input */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Ukuran heading lebih kecil pada HP */
     }
 }
